@@ -3,13 +3,10 @@ exports.config = {
   	specs: [
   		'spec/*.spec.js'
   	],
-  	mocks: {
-  		dir: 'mocks',
-  		default: ['default']
-  	},
   	onPrepare: function(){
   		require('protractor-http-mock').config = {
-	  		rootDirectory: __dirname
+	  		rootDirectory: __dirname,
+				protractorConfig: 'protractor.conf.js' // default value: 'protractor.conf'
 	  	}
   	}
 };
