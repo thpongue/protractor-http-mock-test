@@ -7,11 +7,6 @@
     "example": "example"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-connect": "^0.8.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-jasmine-node": "~0.2.1",
-    "grunt-protractor-runner": "^1.1.4",
     "protractor": "~1.5.0",
     "protractor-http-mock": "^0.1.8"
   },
