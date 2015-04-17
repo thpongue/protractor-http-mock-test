@@ -6,5 +6,5 @@ angular.module('app')
 	.controller('controller', controller);
 
 function controller($http) {
-	$http.get('/test');
+	$http.jsonp('/test');
 }

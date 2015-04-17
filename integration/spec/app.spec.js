@@ -12,7 +12,7 @@ describe('requests made', function(){
 			{
 				request: {
 					path: '/test',
-					method: 'GET'
+					method: 'JSONP'
 				},
 				response: {
 					data: [
@@ -35,7 +35,7 @@ describe('requests made', function(){
 	it('can evaluate requests made', function(){
 
 		expect(mock.requestsMade()).toEqual([
-			{ url : '/test', method : 'GET' },
+			{ url : '/test', method : 'JSONP' },
 		]);
 	});
 
