@@ -2,4 +2,3 @@
 - [] are mocks needed?
 - [] convert from Grunt to gulp
 - [] make it work with a jsonp request
-- [] I'm not familiar with npm run - look into this as an alternative to grunt / gulp

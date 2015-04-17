@@ -1,6 +1,6 @@
 ```
 npm install
 node_modules/.bin/webdriver-manager update
-npm run example
+grunt integration
 ```
 Updating the samples from the project to meet my simplified requirement

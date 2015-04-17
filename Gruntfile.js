@@ -10,7 +10,7 @@ module.exports = function(grunt) {
             all: ['specs/']
         },
         connect: {
-            example: {
+            integration: {
                 options: {
                     base: 'integration'   
                 }
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                 configFile: 'integration/protractor.conf',
                 //debug: true
             },
-            example: {}
+            integration: {}
         }
     });
 
@@ -30,6 +30,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-protractor-runner');
 
-    grunt.registerTask('example', ['connect:example', 'protractor:example']);
+    grunt.registerTask('integration', ['connect:integration', 'protractor:integration']);
     grunt.registerTask('test', ['jasmine_node']);
 };
