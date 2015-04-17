@@ -3,4 +3,4 @@ npm install
 node_modules/.bin/webdriver-manager update
 npm run example
 ```
-These are just the examples from the project
+Updating the samples from the project to meet my simplified requirement
