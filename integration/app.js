@@ -6,5 +6,8 @@ angular.module('app')
 	.controller('controller', controller);
 
 function controller($http) {
-	$http.jsonp('/test');
+	this.loadData = function() {
+		console.log('loadData called');
+		$http.jsonp('/test');
+	}
 }

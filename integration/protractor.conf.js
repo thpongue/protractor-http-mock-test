@@ -6,7 +6,7 @@ exports.config = {
   	onPrepare: function(){
   		require('protractor-http-mock').config = {
 	  		rootDirectory: __dirname,
-				protractorConfig: 'protractor.conf.js' // default value: 'protractor.conf'
+				protractorConfig: 'protractor.conf.js'
 	  	}
   	}
 };

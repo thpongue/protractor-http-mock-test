@@ -30,6 +30,7 @@ describe('requests made', function(){
 		]);
 
 		get();		
+		element(by.css('#loadDataButton')).click();
 	});
 
 	it('can evaluate requests made', function(){
