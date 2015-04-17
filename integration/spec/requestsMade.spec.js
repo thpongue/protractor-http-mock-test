@@ -11,7 +11,7 @@ describe('requests made', function(){
 		mock([
 			{
 				request: {
-					path: '/users',
+					path: '/test',
 					method: 'GET'
 				},
 				response: {
@@ -26,15 +26,6 @@ describe('requests made', function(){
 						}
 					]
 				}
-			},
-			{
-				request: {
-					path: 'users/new',
-					method: 'POST'
-				},
-				response: {
-					status: 200
-				}
 			}
 		]);
 
@@ -42,13 +33,9 @@ describe('requests made', function(){
 	});
 
 	it('can evaluate requests made', function(){
-		element(by.model('ctrl.newUser')).sendKeys('my-new-user');
-		element(by.css('.form #save')).click();
 
 		expect(mock.requestsMade()).toEqual([
-			{ url : '/default', method : 'GET' },
-			{ url : '/users', method : 'GET' },
-			{ data : { name : 'my-new-user' }, url : '/users/new', method : 'POST' }
+			{ url : '/test', method : 'GET' },
 		]);
 	});
 

@@ -2,12 +2,6 @@
 
 module.exports = function(grunt) {
     grunt.initConfig({
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-            },
-            files: ['lib/**/*.js']    
-        },
         jasmine_node: {
             options: {
                 forceExit: true,
@@ -18,13 +12,13 @@ module.exports = function(grunt) {
         connect: {
             example: {
                 options: {
-                    base: 'example'   
+                    base: 'integration'   
                 }
             }
         },
         protractor: {
             options: {
-                configFile: 'example/protractor.conf',
+                configFile: 'integration/protractor.conf',
                 //debug: true
             },
             example: {}
