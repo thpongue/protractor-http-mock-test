@@ -40,7 +40,7 @@ gulp.task('stop_server', ["protractor"], function() {
 });
 
 // start server then run protractor
-gulp.task('protractor', ['start_server_port_8001'], function(cb) {
+gulp.task('protractor', ['start_server_port_8000'], function(cb) {
 	gulp
 		.src(['integration_tests/**/*.js'])
 		.pipe(gulpProtractorAngular({
@@ -54,11 +54,6 @@ gulp.task('protractor', ['start_server_port_8001'], function(cb) {
 		.on('end', cb);
 });
 
-// start http://localhost:8001 pointing to our build folder
-gulp.task('start_server_port_8001', function() {
-	startServer(8001);
-});
-
 // start http://localhost:8000 pointing to our build folder
 gulp.task('start_server_port_8000', function() {
 	startServer(8000);
@@ -66,7 +61,7 @@ gulp.task('start_server_port_8000', function() {
 
 function startServer(port) {
 	plugins.connect.server({
-		root: 'build',
+		root: 'integration',
 		port: port
 	});
 }
