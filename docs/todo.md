@@ -1,5 +1,5 @@
 - [x] what is the role played by the default mock? not needed but a nice add-on for bigger projects
 - [x] are mocks needed? no the folder isn't needed - just do them inline for now
 - [x] make it work with a jsonp request
-- [] can we remove some of our grunt dependencies? I'm just using the ones the sample project was using
-- [] convert from Grunt to gulp
+- [x] can we remove some of our grunt dependencies? I'm just using the ones the sample project was using
+- [x] convert from Grunt to gulp
