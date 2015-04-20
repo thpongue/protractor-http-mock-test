@@ -4,7 +4,7 @@ npm install
 node_modules/.bin/webdriver-manager update
 ```
 
-#install
+#run
 ```
 gulp integration
 ```
