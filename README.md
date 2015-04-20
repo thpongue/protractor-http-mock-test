@@ -10,4 +10,4 @@ gulp integration
 ```
 
 #about
-Updating the samples from the project to meet my simplified requirement
+Updated and vastly cut down the samples from the https://github.com/atecarlos/protractor-http-mock to prototype my simplified requirement. Also implemented a 1-command build using gulp
